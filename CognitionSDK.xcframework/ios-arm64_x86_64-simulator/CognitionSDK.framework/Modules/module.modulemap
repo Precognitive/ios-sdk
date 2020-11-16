@@ -1,0 +1,11 @@
+framework module CognitionSDK {
+  umbrella header "CognitionSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module CognitionSDK.Swift {
+    header "CognitionSDK-Swift.h"
+    requires objc
+}

@@ -1,0 +1,123 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CognitionSDK
+@_exported import CognitionSDK
+import CoreLocation
+import CoreMotion
+import CoreTelephony
+import Foundation
+import Security
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class Cognition : ObjectiveC.NSObject {
+  @objc public static let SDK_VERSION: Swift.String
+  @objc public static let shared: CognitionSDK.Cognition
+  @objc final public var sessionId: Swift.String {
+    get
+  }
+  @objc final public func start() throws
+  @objc final public func analyze(_ callback: @escaping () -> Swift.Void = { })
+  @objc final public func stop()
+  @objc final public func buildRequestBody() -> [Swift.String : Any]
+  @objc final public func setApiKey(_ apiKey: Swift.String)
+  @objc final public func setEventId(_ eventId: Swift.String)
+  @objc final public func setUserId(_ userId: Swift.String)
+  @objc final public func setDeviceUrl(_ url: Swift.String)
+  @objc final public func setBehaviorUrl(_ url: Swift.String)
+  @objc final public func resetSession()
+  @objc final public func getRequestInterval() -> Foundation.TimeInterval
+  @objc final public func setRequestInterval(_ interval: Foundation.TimeInterval)
+  final public func getDataGroups() -> Swift.Set<CognitionSDK.CognitionDataGroup>
+  @objc final public func includeDataGroup(dataGroup: CognitionSDK.CognitionDataGroup)
+  @objc final public func excludeDataGroup(dataGroup: CognitionSDK.CognitionDataGroup)
+  @objc final public func enableDebugMode(enabled: Swift.Bool)
+  @objc final public func enableAltimeter(enabled: Swift.Bool)
+  @objc final public func getAcclerometerUpdateInterval() -> Foundation.TimeInterval
+  @objc final public func setAccelerometerUpdateInterval(_ interval: Foundation.TimeInterval)
+  @objc final public func getGyroUpdateInterval() -> Foundation.TimeInterval
+  @objc final public func setGyroUpdateInterval(_ interval: Foundation.TimeInterval)
+  @objc final public func getMagnetometerUpdateInterval() -> Foundation.TimeInterval
+  @objc final public func setMagnetometerUpdateInterval(_ interval: Foundation.TimeInterval)
+  @objc final public func getDeviceMotionUpdateInterval() -> Foundation.TimeInterval
+  @objc final public func setDeviceMotionUpdateInterval(_ interval: Foundation.TimeInterval)
+  @objc final public func enableMotion(enabled: Swift.Bool)
+  @objc final public func enableCustomMotion(enabled: Swift.Bool)
+  @objc final public func addDeviceMotionData(_ data: CoreMotion.CMDeviceMotion)
+  @objc final public func addDeviceMotionError(_ error: Swift.Error)
+  @objc final public func addAccelerometerData(_ data: CoreMotion.CMAccelerometerData)
+  @objc final public func addAccelerometerError(_ error: Swift.Error)
+  @objc final public func addGyroData(_ data: CoreMotion.CMGyroData)
+  @objc final public func addGyroError(_ error: Swift.Error)
+  @objc final public func addMagnetometerData(_ data: CoreMotion.CMMagnetometerData)
+  @objc final public func addMagnetometerError(_ error: Swift.Error)
+  @objc final public func getLogLevel() -> CognitionSDK.CognitionLogLevel
+  @objc final public func setLogLevel(minLogLevel: CognitionSDK.CognitionLogLevel)
+  @objc final public func setLogCallback(callback: CognitionSDK.CognitionLoggerCallback?)
+  @objc final public func addLocations(_ locations: [CoreLocation.CLLocation])
+  @objc final public func addHeading(_ heading: CoreLocation.CLHeading)
+  @objc final public func addVisit(_ visit: CoreLocation.CLVisit)
+  @objc final public func addPageView(viewController: UIKit.UIViewController, metadata: [Swift.String : Any]? = nil)
+  @objc final public func addPageView(viewControllerName: Swift.String, metadata: [Swift.String : Any]? = nil)
+  @objc final public func addIntentGroup(value: Swift.String, metadata: [Swift.String : Any]? = nil)
+  @objc final public func addSearch(value: Swift.String, metadata: [Swift.String : Any]? = nil)
+  @objc final public func addObjectView(value: Swift.String, metadata: [Swift.String : Any]? = nil)
+  @objc final public func addCustomData(metadata: [Swift.String : Any]?)
+  @objc final public func registerUserNameTextField(_ textField: UIKit.UITextField)
+  @objc final public func registerPasswordTextField(_ textField: UIKit.UITextField)
+  @objc final public func buildBiometricBody() -> [Swift.String : Any]
+  @objc final public func uploadBiometrics(completion: ((Swift.Error?) -> Swift.Void)?)
+  @objc deinit
+}
+public enum DataResult<T> {
+  case success(T)
+  case failure(Swift.Error, Foundation.Date)
+}
+@objc public enum CognitionDataGroup : Swift.Int, Swift.CaseIterable {
+  case device = 0
+  case bundle = 1
+  case network = 2
+  case sys = 3
+  case altimeter = 4
+  case motion = 5
+  case location = 6
+  case battery = 7
+  public var name: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [CognitionSDK.CognitionDataGroup]
+  public static var allCases: [CognitionSDK.CognitionDataGroup] {
+    get
+  }
+}
+public typealias CognitionLoggerCallback = ((Swift.String) -> Swift.Void)
+@objc public enum CognitionLogLevel : Swift.Int, Swift.CaseIterable {
+  case none = 0
+  case error = 1
+  case warning = 2
+  case info = 3
+  case debug = 4
+  case verbose = 5
+  public var name: Swift.String {
+    get
+  }
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [CognitionSDK.CognitionLogLevel]
+  public static var allCases: [CognitionSDK.CognitionLogLevel] {
+    get
+  }
+}
+extension CognitionSDK.CognitionDataGroup : Swift.Equatable {}
+extension CognitionSDK.CognitionDataGroup : Swift.Hashable {}
+extension CognitionSDK.CognitionDataGroup : Swift.RawRepresentable {}
+extension CognitionSDK.CognitionLogLevel : Swift.Equatable {}
+extension CognitionSDK.CognitionLogLevel : Swift.Hashable {}
+extension CognitionSDK.CognitionLogLevel : Swift.RawRepresentable {}
