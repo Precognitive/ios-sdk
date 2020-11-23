@@ -230,7 +230,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Cognition * 
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// dataGroups should be assigned before calling start. Changing dataGroups after calling start may result in undefined behavior.
 /// The pollingInterval can be overridden by calling setPollingInterval. If you change this value while things are running, it will take effect once the current interval completes.
-- (BOOL)startAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)start SWIFT_WARN_UNUSED_RESULT;
 - (void)analyze:(void (^ _Nonnull)(void))callback;
 - (void)stop;
 - (NSDictionary<NSString *, id> * _Nonnull)buildRequestBody SWIFT_WARN_UNUSED_RESULT;
@@ -297,15 +297,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Cognition * 
 - (void)addHeading:(CLHeading * _Nonnull)heading;
 - (void)addVisit:(CLVisit * _Nonnull)visit;
 - (void)addPageViewWithViewController:(UIViewController * _Nonnull)viewController metadata:(NSDictionary<NSString *, id> * _Nullable)metadata;
-- (void)addPageViewWithViewControllerName:(NSString * _Nonnull)viewControllerName metadata:(NSDictionary<NSString *, id> * _Nullable)metadata;
 - (void)addIntentGroupWithValue:(NSString * _Nonnull)value metadata:(NSDictionary<NSString *, id> * _Nullable)metadata;
 - (void)addSearchWithValue:(NSString * _Nonnull)value metadata:(NSDictionary<NSString *, id> * _Nullable)metadata;
 - (void)addObjectViewWithValue:(NSString * _Nonnull)value metadata:(NSDictionary<NSString *, id> * _Nullable)metadata;
-- (void)addCustomDataWithMetadata:(NSDictionary<NSString *, id> * _Nullable)metadata;
 - (void)registerUserNameTextField:(UITextField * _Nonnull)textField;
 - (void)registerPasswordTextField:(UITextField * _Nonnull)textField;
 - (NSDictionary<NSString *, id> * _Nonnull)buildBiometricBody SWIFT_WARN_UNUSED_RESULT;
-- (void)uploadBiometricsWithCompletion:(void (^ _Nullable)(NSError * _Nullable))completion;
+- (BOOL)uploadBiometricsAndReturnError:(NSError * _Nullable * _Nullable)error completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 @end
 
 typedef SWIFT_ENUM(NSInteger, CognitionDataGroup, open) {

@@ -15,7 +15,7 @@ import UIKit
   @objc final public var sessionId: Swift.String {
     get
   }
-  @objc final public func start() throws
+  @objc final public func start() -> Swift.Bool
   @objc final public func analyze(_ callback: @escaping () -> Swift.Void = { })
   @objc final public func stop()
   @objc final public func buildRequestBody() -> [Swift.String : Any]
@@ -57,15 +57,13 @@ import UIKit
   @objc final public func addHeading(_ heading: CoreLocation.CLHeading)
   @objc final public func addVisit(_ visit: CoreLocation.CLVisit)
   @objc final public func addPageView(viewController: UIKit.UIViewController, metadata: [Swift.String : Any]? = nil)
-  @objc final public func addPageView(viewControllerName: Swift.String, metadata: [Swift.String : Any]? = nil)
   @objc final public func addIntentGroup(value: Swift.String, metadata: [Swift.String : Any]? = nil)
   @objc final public func addSearch(value: Swift.String, metadata: [Swift.String : Any]? = nil)
   @objc final public func addObjectView(value: Swift.String, metadata: [Swift.String : Any]? = nil)
-  @objc final public func addCustomData(metadata: [Swift.String : Any]?)
   @objc final public func registerUserNameTextField(_ textField: UIKit.UITextField)
   @objc final public func registerPasswordTextField(_ textField: UIKit.UITextField)
   @objc final public func buildBiometricBody() -> [Swift.String : Any]
-  @objc final public func uploadBiometrics(completion: ((Swift.Error?) -> Swift.Void)?)
+  @objc final public func uploadBiometrics(completion: ((Swift.Error?) -> Swift.Void)?) throws
   @objc deinit
 }
 public enum DataResult<T> {
