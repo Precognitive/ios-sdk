@@ -1,11 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CognitionSDK
 @_exported import CognitionSDK
 import CoreLocation
 import CoreMotion
 import CoreTelephony
+import Darwin
 import Foundation
+import MachO
 import Security
 import Swift
 import UIKit
@@ -15,7 +17,7 @@ import UIKit
   @objc final public var sessionId: Swift.String {
     get
   }
-  @objc final public func start() throws
+  @objc final public func start() -> Swift.Bool
   @objc final public func analyze(_ callback: @escaping () -> Swift.Void = { })
   @objc final public func stop()
   @objc final public func buildRequestBody() -> [Swift.String : Any]
@@ -68,10 +70,6 @@ import UIKit
   @objc final public func uploadBiometrics(completion: ((Swift.Error?) -> Swift.Void)?)
   @objc deinit
 }
-public enum DataResult<T> {
-  case success(T)
-  case failure(Swift.Error, Foundation.Date)
-}
 @objc public enum CognitionDataGroup : Swift.Int, Swift.CaseIterable {
   case device = 0
   case bundle = 1
@@ -114,6 +112,10 @@ public typealias CognitionLoggerCallback = ((Swift.String) -> Swift.Void)
   public static var allCases: [CognitionSDK.CognitionLogLevel] {
     get
   }
+}
+public enum DataResult<T> {
+  case success(T)
+  case failure(Swift.Error, Foundation.Date)
 }
 extension CognitionSDK.CognitionDataGroup : Swift.Equatable {}
 extension CognitionSDK.CognitionDataGroup : Swift.Hashable {}

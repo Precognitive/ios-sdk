@@ -6,67 +6,67 @@
 	<dict>
 		<key>Headers/CognitionSDK-Swift.h</key>
 		<data>
-		AI5j4ECzPqgkVZbwY1mLB57azKw=
+		/Gy/dKCQVAe9IRSnPNKMW8UX3dk=
 		</data>
-		<key>Headers/CognitionSDK.h</key>
+		<key>Headers/CognitionSDK-framework-umbrella.h</key>
 		<data>
-		jMYRu2xKANtnWjEu0N3t5zuRnpc=
+		j8on2OQhyXp5pdQVVxW2tocflCQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zptQ4Du+OwNVokPSG35Zz+PkCpA=
+		V1WA7Lsa55svSOBRxAnnIGKbNUg=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FKK1UDRsQ2Mw4zAIW/qRWlPOjt0=
+		JQQxZ4Z/rlMOhF1bsquPm+qCjyo=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bhmJ+keE6lzJIy0rkxMJN5QlkRc=
+		JeFwiKONh5f3zydpuOB+Kj2akxg=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hFLDaV8u1GQKabV9cyHgoIWcnZM=
+		Y8zcfrGjAtSrax8jlLQpF1IVuXk=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		FKK1UDRsQ2Mw4zAIW/qRWlPOjt0=
+		JQQxZ4Z/rlMOhF1bsquPm+qCjyo=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		bhmJ+keE6lzJIy0rkxMJN5QlkRc=
+		JeFwiKONh5f3zydpuOB+Kj2akxg=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		hFLDaV8u1GQKabV9cyHgoIWcnZM=
+		Y8zcfrGjAtSrax8jlLQpF1IVuXk=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2/J6A2DpcXbPyHMVC7TNCFj8EiU=
+		ykZO47Rnq6QsTJ5opm+YDaPOqG8=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		30zYH/Uf/SgSSl6u6QWs0SrpNzs=
+		TEQbumzL+zexmh8X7DCyT+dYzN8=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B92+vAI0Fc/Fx7REBp/SUgxj0qI=
+		CKF0ZQ2CA+PWlURdJl4dLu3Y9UE=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		2/J6A2DpcXbPyHMVC7TNCFj8EiU=
+		ykZO47Rnq6QsTJ5opm+YDaPOqG8=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		30zYH/Uf/SgSSl6u6QWs0SrpNzs=
+		TEQbumzL+zexmh8X7DCyT+dYzN8=
 		</data>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		B92+vAI0Fc/Fx7REBp/SUgxj0qI=
+		CKF0ZQ2CA+PWlURdJl4dLu3Y9UE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		LXCtMEpnQ5Dx0DciXK0HEvYAQ4M=
+		WjTidOg9mL9Hjk0zIs6p9Ge/Ces=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,105 +75,105 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QJ8Hbw0VtQqSq3h9G7niwXwBzdAaSYDLOpzVLgeUtVc=
+			ULKBCtKKqhN9reyRsx7uaTXdg3tpwSylOsJztBxrmC0=
 			</data>
 		</dict>
-		<key>Headers/CognitionSDK.h</key>
+		<key>Headers/CognitionSDK-framework-umbrella.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tb4FZIzyStG2mt5le27OkhSM1MZ0R+2p19VlCEDxGbQ=
+			fkRUy36pnzMMHc0/mb7GiicgrC+Ax923EOChCANTQuk=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xycErJTZ2t3HjJiTHn+ooDJAgFGtqcv5eZMWDf7nWhI=
+			8vBkciSj4DjRnWNQD+b4n24EqFk0sRTIHCxQNCv1qhI=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZXIL3SHE3T7fwVKBY+7b09SqlYyH22o2jM0WnzA2ZGA=
+			xoU6TDbqBG5m72rjVauWgPAWvz1MzuLV19gRoEzCVzg=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KV77Iy6kP8Z715BLpmoa3MDzAX1pTUYRKEO4qmHowRE=
+			W/jMJ97T8Wks60wPvu1X0qOEtsEkQ7S0m2qPr9YbX+Q=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xycErJTZ2t3HjJiTHn+ooDJAgFGtqcv5eZMWDf7nWhI=
+			8vBkciSj4DjRnWNQD+b4n24EqFk0sRTIHCxQNCv1qhI=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZXIL3SHE3T7fwVKBY+7b09SqlYyH22o2jM0WnzA2ZGA=
+			xoU6TDbqBG5m72rjVauWgPAWvz1MzuLV19gRoEzCVzg=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KV77Iy6kP8Z715BLpmoa3MDzAX1pTUYRKEO4qmHowRE=
+			W/jMJ97T8Wks60wPvu1X0qOEtsEkQ7S0m2qPr9YbX+Q=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r6dpXmKA3gAYdh0b0Xo9Tzkt4gIV5K0Gef5wdeYES5w=
+			RJTaw4f/whO6Lt4X3fliYzt/H9DHMt01scwFgQWLa6Y=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dml1/QXU559A1AzybGhR9ECF7wVDzUYce6IP2EWGTec=
+			bCBllNHTWaIbvI06ue4rooRf/SHRvBdhPNKH4OWUHLg=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wWjcRtLc2uY0byl3CGLm8zoPt/DYXFGW62CU7b1uisU=
+			bA5XKjd1nEy79A7RE7sbJ+O7fAGvYRAIb6ymeAhGZkM=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r6dpXmKA3gAYdh0b0Xo9Tzkt4gIV5K0Gef5wdeYES5w=
+			RJTaw4f/whO6Lt4X3fliYzt/H9DHMt01scwFgQWLa6Y=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dml1/QXU559A1AzybGhR9ECF7wVDzUYce6IP2EWGTec=
+			bCBllNHTWaIbvI06ue4rooRf/SHRvBdhPNKH4OWUHLg=
 			</data>
 		</dict>
 		<key>Modules/CognitionSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wWjcRtLc2uY0byl3CGLm8zoPt/DYXFGW62CU7b1uisU=
+			bA5XKjd1nEy79A7RE7sbJ+O7fAGvYRAIb6ymeAhGZkM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0RrChIHHKbsoERxlGGE7I3B/sD/fxArCrgbPb781X+w=
+			U2Iq/0svw+C7ma7Yk++Jre9qrkfebMHzM+b1Qn0jCfM=
 			</data>
 		</dict>
 	</dict>
