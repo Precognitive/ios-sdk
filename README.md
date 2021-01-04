@@ -8,13 +8,13 @@
 
 ## SDK Docs
 
-[SDK Documentation](https://precognitive.github.io/ios-sdk/docs/2.1.1)
+[Full SDK Documentation](https://precognitive.github.io/ios-sdk/docs/2.1.1).
 
-### Usage & Integration
+## Usage & Integration
 
 To integrate the SDK you will need to follow the examples below depending on your Application language.
 
-##### Bootstrap Integration
+### Bootstrap Integration
 
 ```swift
 // AppDelegate.swift
@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 ```
-#### Lifecycle Integration
+## Lifecycle Integration
 
 Below are example classes that could exist in your application. The examples are meant to provide guidance on when during your applications lifecycle to call certain methods on the SDK (i.e. Cognition#analyze, Cognition#resetSession) 
 
@@ -109,7 +109,7 @@ class Auth {
 }
 ```
 
-### Data Groups
+## Data Groups
 
 Cognition sends a variety of data with each request. You can opt in or opt out of any of these groups.
 
@@ -127,7 +127,7 @@ You can optionally include the following groups: `altimeter`, `battery`, and `pa
 
 `pageView` allows you to manually register your view controllers as they appear.
 
-### How to use the Altimeter
+## How to use the Altimeter
 
 Add the following to your code prior to calling the `start` method:
 
@@ -135,7 +135,7 @@ Add the following to your code prior to calling the `start` method:
 Cognition.shared.includeDataGroup(.altimeter)
 ```
 
-### Motion 
+## Motion 
 
 ### How to use Motion data
 
@@ -193,7 +193,7 @@ setDeviceMotionUpdateInterval(_ interval: TimeInterval)
 setMagnetometerUpdateInterval(_ interval: TimeInterval)
 ```
 
-### Location
+## Location
 
 Because the use of Core Location requires your app to ask the user's permission, you'll need to integrate Core Location into your app before you're able to use this feature.
 
@@ -223,7 +223,7 @@ addHeading(_ heading: CLHeading)
 addVisit(_ visit: CLVisit) 
 ```
 
-### Page Views
+## Page Views
 
 There are two ways you can track page views:
 1. Use a UINavigationControllerDelegate or
@@ -267,7 +267,7 @@ addObjectView(value: String, metadata: [String: Any]? = nil)
 addSearch(value: String, metadata: [String: Any]? = nil)
 ```
 
-### Biometric Data
+## Biometric Data
 
 You can register user name and password fields to capture biometric data.
 
@@ -287,7 +287,7 @@ uploadBiometrics(completion: ((Error?) -> Void)?)
 Only 1 user name field and 1 password field may be registered at a time. Registering a field assigns methods to the following events: `.editingDidBegin`, `.editingChanged`, and `editingDidEnd`. Do not assign your own methods to these events. You may continue to use the corresponding `UITextFieldDelegate` methods.
 
 
-### Debugging
+## Debugging
 
 Additional information is available to developers while debugging.
 
@@ -305,5 +305,5 @@ You can also increase the volume of logged output by increasing the logging leve
 setLogLevel(minLogLevel: CognitionLogLevel)
 ```
 
-### Troubleshooting
+## Troubleshooting
 If you have any issues installing the SDK, please reach out to [support@precognitive.com](mailto:support@precognitive.com) and we will get back to you regarding your issues/problems with the SDK.
