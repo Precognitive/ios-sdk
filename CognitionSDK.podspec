@@ -1,7 +1,7 @@
 # https://medium.com/@anuragajwani/distributing-universal-ios-frameworks-as-xcframeworks-using-cocoapods-699c70a5c961
 Pod::Spec.new do |s|
     s.name                  = "CognitionSDK"
-    s.version               = "2.1.0"
+    s.version               = "2.1.1"
     s.summary               = "Precognitive iOS SDK"
     s.description           = "An iOS SDK for integration with Precognitive's fraud detection"
     s.homepage              = "https://precognitive.com/"
