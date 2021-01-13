@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         cognition.setDeviceUrl("https://device.example.com")
         
         // If necessary, please fill in the below event id i.e. `cognition.setEventId(custom.getEventId())`
-        cognition.setEventId("CUSTOM_EVENTID")
+        // cognition.setEventId("CUSTOM_EVENTID")
         
         cognition.start()
 
@@ -50,6 +50,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 ```
+
+## Fetching Sesison Id
+To fetch the session id, use the following.
+```swift
+let cognition: Cognition = Cognition.shared
+let sessionid = cognition.sessionId
+```
+
 ## Lifecycle Integration
 
 Below are example classes that could exist in your application. The examples are meant to provide guidance on when during your applications lifecycle to call certain methods on the SDK (i.e. Cognition#analyze, Cognition#resetSession) 
@@ -191,6 +199,8 @@ setAccelerometerUpdateInterval(_ interval: TimeInterval)
 setDeviceMotionUpdateInterval(_ interval: TimeInterval)
 
 setMagnetometerUpdateInterval(_ interval: TimeInterval)
+
+setGyroUpdateInterval(_ interval: TimeInterval)
 ```
 
 ## Location
