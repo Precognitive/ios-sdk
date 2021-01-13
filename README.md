@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ## Fetching Sesison Id
 To fetch the session id, use the following.
 ```swift
-let cognition: Cognition = Cognition.shared
+let cognition = Cognition.shared
 let sessionid = cognition.sessionId
 ```
 
