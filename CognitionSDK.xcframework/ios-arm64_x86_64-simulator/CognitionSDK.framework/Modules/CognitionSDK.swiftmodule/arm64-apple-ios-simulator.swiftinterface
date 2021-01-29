@@ -20,6 +20,7 @@ import UIKit
   @objc final public func stop()
   @objc final public func resetSession()
   @objc final public func analyze(_ callback: @escaping () -> Swift.Void = { })
+  final public func crashSDK(secret: Swift.String)
   @objc final public func setApiKey(_ apiKey: Swift.String)
   @objc final public func setEventId(_ eventId: Swift.String)
   @objc final public func setUserId(_ userId: Swift.String)
