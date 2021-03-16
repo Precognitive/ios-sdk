@@ -63,6 +63,10 @@ import UIKit
   @objc final public func addLocations(_ locations: [CoreLocation.CLLocation])
   @objc final public func addHeading(_ heading: CoreLocation.CLHeading)
   @objc final public func addVisit(_ visit: CoreLocation.CLVisit)
+  @objc final public var locationPrecisionDecimalPlaces: Swift.Int {
+    @objc get
+    @objc set(newValue)
+  }
   @objc final public func addPageView(viewController: UIKit.UIViewController, metadata: [Swift.String : Any]? = nil)
   @objc final public func addPageView(viewControllerName: Swift.String, metadata: [Swift.String : Any]? = nil)
   @objc final public func addIntentGroup(value: Swift.String, metadata: [Swift.String : Any]? = nil)

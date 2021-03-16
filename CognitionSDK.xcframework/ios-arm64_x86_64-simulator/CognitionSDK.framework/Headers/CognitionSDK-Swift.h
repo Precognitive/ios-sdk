@@ -389,6 +389,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Cognition * 
 /// \param visit the visits to add
 ///
 - (void)addVisit:(CLVisit * _Nonnull)visit;
+/// Set an optional number of decimal places to round the location coordinates as a means to control location precision
+/// \param deciamlPlaces the maxiim number of decimal places to report. Setting -1 will send with default precision
+///
+@property (nonatomic) NSInteger locationPrecisionDecimalPlaces;
 /// Adds a page view by UIViewController reference
 /// \param viewController the view controller to add
 ///
@@ -870,6 +874,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Cognition * 
 /// \param visit the visits to add
 ///
 - (void)addVisit:(CLVisit * _Nonnull)visit;
+/// Set an optional number of decimal places to round the location coordinates as a means to control location precision
+/// \param deciamlPlaces the maxiim number of decimal places to report. Setting -1 will send with default precision
+///
+@property (nonatomic) NSInteger locationPrecisionDecimalPlaces;
 /// Adds a page view by UIViewController reference
 /// \param viewController the view controller to add
 ///
