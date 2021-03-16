@@ -4,7 +4,7 @@
 
 **Add the following to your Podfile.**
 
-`pod 'CognitionSDK', :git => 'https://github.com/Precognitive/ios-sdk.git', :tag => '2.1.2'`
+`pod 'CognitionSDK', :git => 'https://github.com/Precognitive/ios-sdk.git', :tag => '2.2.0'`
 
 ## SDK Docs
 
