@@ -8,7 +8,7 @@
 
 ## SDK Docs
 
-[Full SDK Documentation](https://precognitive.github.io/ios-sdk/docs/2.1.2).
+[Full SDK Documentation](https://precognitive.github.io/ios-sdk/docs/2.2.0).
 
 ## Usage & Integration
 
@@ -52,9 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 
 ## Fetching Sesison Id
-To fetch the session id, use the following.
+To fetch the session id, use the following.  A call to analyze must be submitted and completed prior to accessing the session ID.
 ```swift
 let cognition = Cognition.shared
+cognition.analyze()
 let sessionid = cognition.sessionId
 ```
 
