@@ -199,7 +199,7 @@ Once Core Location is working in your app, follow the instructions below to use 
 Add the following to your code prior to calling the `start` method:
 
 ```swift
-Cognition.shared.includeDataGroup(.location)
+cognition.includeDataGroup(dataGroup: CognitionDataGroup.location)
 // Start the Core Location services your app uses after this point, if you wish to capture the initial data.
 // Any data generated before calling start() will be captured.
 ```
