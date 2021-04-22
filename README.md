@@ -35,9 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         cognition.setBehaviorUrl("https://behavior.example.com")
         cognition.setDeviceUrl("https://device.example.com")
         
-        // If necessary, please fill in the below event id i.e. `cognition.setEventId(custom.getEventId())`
-        // cognition.setEventId("CUSTOM_EVENTID")
-        
         cognition.start()
 
         return true
@@ -122,11 +119,7 @@ class Auth {
 
 Cognition sends a variety of data with each request. You can opt in or opt out of any of these groups.
 
-The following groups are included by default: `device`, `bundle`, `network`, `sys`, `location`, `motion`.
-
-You can optionally include the following groups: `altimeter`, `battery`, and `pageView`.
-
-`altimeter` works without any additional effort.
+The following groups are included by default: `device`, `bundle`, `network`, `sys`, `motion`, `altimeter`, and `battery`.
 
 `motion` works without any additional effort if you aren't already using a `CMMotionManager` in your app. (Please see the Motion section if you do use a `CMMotionManager` in your app.)
 
@@ -134,15 +127,6 @@ You can optionally include the following groups: `altimeter`, `battery`, and `pa
 
 `battery` requires that `UIDevice.current.isBatteryMonitoringEnabled = true` is set somewhere in your app. Otherwise, it will report a battery level of -1. You must also include the `device` group. (By default, the `device` group is automatically included.)
 
-`pageView` allows you to manually register your view controllers as they appear.
-
-## How to use the Altimeter
-
-Add the following to your code prior to calling the `start` method:
-
-```swift
-Cognition.shared.includeDataGroup(.altimeter)
-```
 
 ## Motion 
 
